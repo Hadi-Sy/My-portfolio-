@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hadi ALhussein</title>
+    <link rel="stylesheet" href="Style/main.css">
+    <link rel="stylesheet" href="Style/normalize.css">
+    <link rel="icon" type="image/x-icon" href="Assets/fav.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="loading" id="pre">
+        <div></div>
+    </div>
+    <header>
+        <div class="navigation-container">
+            <nav>
+                <img src="Assets/logo.webp" loading="lazy" style="width: 85px;">
+                <ul id="sidemenue">
+                    <li> <a href="#" onclick="menuemember()">Home</a></li>
+                    <li> <a href="#ab" onclick="menuemember()">About</a></li>
+                    <li> <a href="#Services" onclick="menuemember()">Services</a></li>
+                    <li> <a href="#Projects" onclick="menuemember()">Projects</a></li>
+                    <li> <a href="#contact" onclick="menuemember()">contact</a></li>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenue()" id="bar"></i>
+            </nav>
+        </div>
+    </header>
+    <div id="drop">
+        <section class="hero-section">
+            <div class=" hero">
+                <div class="hero-text">
+                    <div class="custome">
+                        <p>Frontend Developer</p>
+                        <p>Graphic Design</p>
+                    </div>
+                    <h1>Hi, I'm <span style="color: var(--mainColor);">Hadi</span> <br>ALhussein from Syria</h1>
+                    <a href="https://github.com/Hadi-Sy" class="btn" target="_blank">My Github</a>
+                </div>
+                <div class="img"><img src="Assets/my-photo.webp" loading="lazy"></div>
+            </div>
+        </section>
+
+        <!-- ---------------- about ------------- -->
+        <section class="about" id="ab">
+            <div class="about-content">
+                <div class="row">
+                    <div class="col-1">
+                        <img src="Assets/user.webp" loading="lazy" style="height:450px;">
+                    </div>
+                    <div class="col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>Web programmer with more than +1 years of experience that qualifies me to design a
+                            professional website that is responsive, in addition to intermediate experience in the field
+                            of
+                            graphic design, including Photosho and other important techniques.
+                        </p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-content active-tab" id="skills">
+                            <ul>
+                                <li><span>Frontend developer</span><br>Creating a professional & responsive website
+                                    using:
+                                    <br> HTML - CSS - JS - Bootstrap - Tailwind - Sass - React.js
+                                </li>
+                                <li><span>Graphic Design</span><br>Using: <br> Adobe photoshop / Adobe illustrator /
+                                    Adobe
+                                    After effect</li>
+                            </ul>
+                        </div>
+                        <div class="tab-content" id="experience">
+                            <ul>
+                                <li><span>2022 - current</span><br>Frontend developer with more than 2 years</li>
+                                <li><span>2024 - current</span><br>junior Graphic Design</li>
+                            </ul>
+                        </div>
+                        <div class="tab-content" id="education">
+                            <ul>
+                                <li><span>Computer engineer</span><br>Syria / Damascus University <br> 2022-current</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ----------------- services -------------- -->
+        <section id="Services">
+            <div class="services-container">
+                <h1 class="sub-title">My services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fas fa-code"></i>
+                        <h2>Web developer</h2>
+                        <p>Creating a professional responsive website with many techniques such as : HTML - CSS - JS -
+                            Bootstrap - Tailwind - Sass - React.js </p>
+                        <a href="#Projects">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fas fa-crop-alt"></i>
+                        <h2>Graphic Design</h2>
+                        <p>Professional way to create social advertisments - logos - visual identity using Adboe
+                            programes
+                        </p>
+                        <a href="https://suar.me/gMjVX" target="_blank">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fab fa-app-store"></i>
+                        <h2>Problem Solving</h2>
+                        <p>intermediate knowladge of problem solving using programming languages such as c++ -
+                            Javascript
+                            ...</p>
+                        <a href="#contact">Learn more</a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- --------------- projects ------------  -->
+        <section id="Projects">
+            <div class="Projects-container">
+                <h1 class="sub-title">Some of My Creative work</h1>
+                <div class="Projects-list">
+                    <div class="work">
+                        <img src="Assets/project1.webp" loading="lazy">
+                        <div class="layer">
+                            <h3>Studio Website</h3>
+                            <p>full Responsive website using Bootstrap framework</p>
+                            <a href="https://hadi-sy.github.io/studio-project/" target="_blank"><i
+                                    class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="Assets/project2.webp" loading="lazy">
+                        <div class="layer">
+                            <h3>team project</h3>
+                            <p>project that made with 3 programmers using git & github</p>
+                            <a href="https://ghaith-alqattan.github.io/Nexcent/" target="_blank"><i
+                                    class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="Assets/project3.webp" loading="lazy">
+                        <div class="layer">
+                            <h3>Reasturant website</h3>
+                            <p>first treaining website</p>
+                            <a href="https://hadi-sy.github.io/First-website/" target="_blank"><i
+                                    class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ------------- contact --------------- -->
+        <section id="contact">
+            <div class="contact-container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p>Email: hadi.alhussein2004@gmail.com</p>
+                        <p>Phone: +963939384745</p>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/profile.php?id=61563953910193" target="_blank"><i
+                                    class="fab fa-facebook"></i></a>
+                            <a href="https://t.me/HadiALhussein" target="_blank"><i class="fab fa-telegram"></i></a>
+                            <a href="https://www.behance.net/hadih" target="_blank"><i class="fab fa-behance"></i></a>
+                        </div>
+                        <a href="Assets/cv1.pdf" download class="btn">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn">submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="copyright">
+            <p>copyright © all rights Reserved to Hadi 2025</p>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
